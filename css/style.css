@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  max-width: 1500px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+header {
+  position: relative;
+}
+
+hr {
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+  opacity: 0.6;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0; 
+  list-style: none;
+}
+
+.p-t-64 {
+  padding-top: 64px;
+}
+
+.p-64-0 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ccc;
+  color: black;
+}
+/* Slide Show */
+
+.slide .slide-img{
+  position: relative;  
+  display: block;
+  width: 100%;
+  animation: opacityl 1.5s;
+
+}
+
+.slide .slide-content{
+  position: absolute;
+  align-self: center;
+  width: 35%;
+  padding: 8px 16px;  
+  text-align: center;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  animation: opacityl 1.5s;
+}
+
+
+.slide .slide-content .slide-content-items {
+  background: black;
+  color: white;
+  padding: 12px 24px;  
+  border-radius: 8px;
+  opacity: 0.6;
+}
+
+.slide-content-items:hover {opacity: 1!important;}
+
+.slide-content .slde-content-header {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.slide-content-items .slide-content-download {
+  background-color: #4CAF50;
+  color: #fff;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.slide-content-download:hover{
+  background: #f1f1f1!important;;
+  color: black;
+}
+
+header .slide-taketour {
+  background: black;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  border-radius: 4px;
+  transform: translate(0, -50%);
+}
+
+.slide-taketour:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+/* Modal */
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: opacityl 1s;
+}
+
+.modal-content {
+  position: relative;
+  background-color:white;
+  max-width: 900px;
+  min-height: 100px;
+  margin: 0 auto;
+  padding: 32px 48px;
+  font-size: 16px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background-color: #ccc;
+}
+
+.modal-title {
+  font-size: 30px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 10px 0;
+} 
+
+.modal-input {
+  width: 100%;
+  padding: 8px ;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  font-size: 16px;
+  border: 1px solid #f1f1f1;
+}
+
+.modal-btn-download {
+  background-color: #f44336;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 12px 24px;
+  margin-bottom: 16px;  
+}
+
+/* Contentainer */
+
+.title {
+  margin: 10px 0;
+  font-size: 64px;
+  line-height: 1.5;
+}
+
+.sub-title {
+  margin: 10px 0;
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+
+/* The App  */
+#the__app {
+  background: white;
+  font-size: 16px;
+}
+
+.the__app-download {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 16px 0;
+  padding: 12px 24px;
+}
+
+
+
+/* Clarity */
+#clarity {
+  background: #f1f1f1;
+}
+
+/* Features  */
+#features {
+  background: #616161;
+  color: #fff;
+  text-align: center;
+}
+
+#features .row{
+  margin-top: 64px;
+}
+
+#features .row .col i {
+  font-size: 64px;
+}
+/* Pricing */
+#pricing {
+  background: white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+ 
+}
+
+.pricing-item {
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.6)
+}
+
+.pricing-item:hover {
+  box-shadow: 2px 2px 15px rgb(0, 0, 0)
+}
+
+.pricing-header{
+  padding: 32px 16px!important;
+  font-size: 24px;
+  color: white;
+}
+
+.pricing-item li{
+  border: 1px solid #f1f1f1;
+  padding: 16px;
+}
+
+.pricing-footer{
+  background: #f1f1f1;
+  padding: 24px 16px!important;
+  font-size: 24px;
+}
+
+.pricing-price {
+  opacity: 0.6;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.pricing-download {
+  padding: 12px 24px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/* Footer */
+footer {
+  background: #f1f1f1;
+  padding: 32px 16px;
+  text-align: center;
+  font-size: 16px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #616161;
+}
+
+footer a:hover {
+  opacity: 0.6;
+}
+
+@keyframes opacityl {
+  0% { 
+    opacity: 0
+  } 100% { 
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .modal-content {
+    max-width: 600px;
+  }
+
+  .the__app-download {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .mb-text-center{
+    text-align: center!important;
+  }
+}
