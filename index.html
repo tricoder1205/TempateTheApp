@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/gird.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+</head>
+<body>
+    <header>
+        <div id="slides">
+            <div class="slide">
+                <img class="slide-img" src="image/app.jpg" alt="">
+                <div class="slide-content">
+                <div class="slide-content-items">
+                    <p class="slde-content-header">Take photos with our app</p>
+                    <hr>
+                    <p class="slide-content-decription">Super simple installment: free of charge</p>
+                    <button id="download" onclick="openDownload();" class="btn slide-content-download">
+                        Download
+                        <i class="ti ti-android"></i>
+                        <i class="ti ti-apple"></i>
+                        <i class="ti ti-microsoft-alt"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="slide">
+                <img class="slide-img" src="image/app2.jpg" alt="">
+                <div class="slide-content">
+                <div class="slide-content-items">
+                    <p class="slde-content-header" style="color: #f44336"><b>CLICK!</b> Fast and Easy</p>
+                    <hr>
+                    <p class="slide-content-decription">Choose from thousands of features</p>
+                    <button id="download" onclick="openDownload();" class="btn slide-content-download" style="background-color: #f44336">
+                        Download
+                        <i class="ti ti-android"></i>
+                        <i class="ti ti-apple"></i>
+                        <i class="ti ti-microsoft-alt"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="slide">
+                <img class="slide-img" src="image/app4.jpg" alt="">
+                <div class="slide-content">
+                <div class="slide-content-items">
+                    <p class="slde-content-header">Smart Design</p>
+                    <hr>
+                    <p class="slide-content-decription">Customize photos as you go</p>
+                    <button id="download" onclick="openDownload();" class="btn slide-content-download" style="background-color: #3f51b5">
+                        Download
+                        <i class="ti ti-android"></i>
+                        <i class="ti ti-apple"></i>
+                        <i class="ti ti-microsoft-alt"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        <button class="btn slide-taketour" onclick="plusSlide(1)">Take Tour <i class="ti ti-angle-right"></i></button>
+    </header>
+    <!-- The Modal -->
+    <div id="modal">
+        <div class="modal-content">
+            <i class="ti ti-close modal-close" onclick="closeModal();"></i>
+            <p class="modal-title">Download</p>
+            <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
+            <p>
+                <i class="ti ti-android"></i>
+                <i class="ti ti-apple"></i>
+                <i class="ti ti-microsoft-alt"></i>
+            </p> 
+            <input type="text" class="modal-input" placeholder="Enter your e-mail.">
+            <button class="btn modal-btn-download" onclick="closeModal();">Fake Download</button>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- Contentainer -->
+    <div id="the__app" class="p-64-0">
+        <div class="row">
+            <div class="col p-8 l-6 m-12">
+                <p class="title" ><b>The App</b></p>
+                <p class="sub-title" style="color: #4CAF50"><b>Why buy it?</b></p>
+                <p>
+                    <span style="font-size: 24px">Take photos like a pro.</span>
+                    You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <button id="download" onclick="openDownload();" class="btn the__app-download"><i class="ti ti-download"></i> Download Application</button>
+                <p>Available for
+                    <i class="ti ti-android" style="color: green"></i>
+                    <i class="ti ti-apple"></i>
+                    <i class="ti ti-microsoft-alt" style="color:dodgerblue"></i>
+                </p>
+            </div>
+            <div class="col p-4 l-6 m-12 mb-text-center" style="text-align: right;">
+                <img src="image/img_app.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="clarity" class="p-64-0">
+        <div class="row">
+            <div class="col p-4 l-6 m-0">
+                <img src="image/app5.jpg" alt="">
+            </div>
+            <div class="col p-8 l-6 m-12">
+                <p class="title"><b>Clarity</b></p>
+                <p class="sub-title" style="color: #f44336"><b>Pixels, who?</b></p>
+                <p>
+                    <span style="font-size: 24px"> A revolution in resolution.</span>
+                    Sharp and clear photos with the world's best photo engine, incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="features" class="p-64-0">
+        <p class="title"><b>Features</b></p>
+        <p>This app is just so lorem ipsum.</p>
+        <div class="row">
+            <div class="col p-3 l-3 m-3">
+                <i class="ti ti-bolt" style="color: orange"></i>
+                <p>Fast</p>
+            </div>
+            <div class="col p-3 l-3 m-3">
+                <i class="ti  ti-heart" style="color: red"></i>
+                <p>Loved</p>
+            </div>
+            <div class="col p-3 l-3 m-3">
+                <i class="ti ti-camera" style="color: yellow"></i>
+                <p>Clarity</p>
+            </div>
+            <div class="col p-3 l-3 m-3">
+                <i class="ti ti-server" style="color: green"></i>
+                <p>Power</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-3 l-3 m-3">
+                <i class="ti ti-star" style="color:  white"></i>
+                <p>Sharp</p>
+            </div>
+            <div class="col p-3 l-3 m-3">
+                <i class="ti ti-cloud" style="color: blue"></i>
+                <p>Cloud</p>
+            </div>
+            <div class="col p-3 l-3 m-3">
+                <i class="ti ti-world" style="color: #ffc107"></i>
+                <p>Global</p>
+            </div>
+            <div class="col p-3 l-3 m-3">
+                <i class="ti ti-harddrive" style="color: #00bcd4"></i>
+                <p>Storage</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-3 l-3 m-3">
+                <i class="ti ti-user" style="color: #fff"></i>
+                <p>Safe</p>
+            </div>
+            <div class="col p-3 l-3 m-3">
+                <i class="ti ti-shield" style="color: orange"></i>
+                <p>Stabile</p>
+            </div>
+            <div class="col p-3 l-3 m-3">
+                <i class="ti ti-rss-alt" style="color: #757575"></i>
+                <p>Connected</p>
+            </div>
+            <div class="col p-3 l-3 m-3">
+                <i class="ti ti-image" style="color: #e91e63"></i>
+                <p>HD</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="pricing" class="p-64-0">
+        <p class="title"><b>Pricing</b></p>
+        <p>Choose a pricing plan that fits your needs.</p>
+        <div class="row p-t-64">
+            <div class="col p-6 l-6 m-12">
+                <ul class="pricing-item" >
+                    <li class="pricing-header" style="background: #616161;">Basic</li>
+                    <li><b>250</b> Photos</li>
+                    <li><b>10</b> Features</li>
+                    <li><b>No</b> Ads</li>
+                    <li><b> Office hours </b>Support</li>
+                    <li><p class="pricing-price">$ 25</p></li>
+                    <li class="pricing-footer">
+                        <button id="download" onclick="openDownload();" class="btn pricing-download "><i class="ti ti-download"></i> Download</button>
+                    </li>
+                </ul>
+            </div>  
+            <div class="col p-6 l-6 m-12"> 
+                <ul class="pricing-item">
+                    <li class="pricing-header" style="background: #f44336;">Premium</li>
+                    <li><b>1000</b> Photos</li>
+                    <li><b>50</b> Features</li>
+                    <li><b>No</b> Ads</li>
+                    <li><b>Endless</b> Support</li>
+                    <li><p class="pricing-price">$ 99</p></li>
+                    <li class="pricing-footer">
+                        <button id="download" onclick="openDownload();" class="btn pricing-download"><i class="ti ti-download"></i> Download</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p style="font-size: 36px">
+            <a href="#"><i class="ti ti-facebook"></i></a>
+            <a href="#"><i class="ti ti-instagram"></i></a>
+            <a href="#"><i class="ti ti-github"></i></a>
+            <a href="#"><i class="ti ti-pinterest"></i></a>
+            <a href="#"><i class="ti ti-twitter-alt"></i></a>
+            <a href="#"><i class="ti ti-linkedin"></i></a>
+        </p>
+        <p>Powered by @<a href="index.html">The app</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
